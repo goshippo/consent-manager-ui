@@ -75,6 +75,7 @@ export function CompleteOptions({
       >
         {formatMessage(messages.consentTitle)}
       </p>
+      <p role="paragraph">{formatMessage(messages.consentTitleToggleInfo)}</p>
       <form className="complete-options-form">
         <GPCIndicator />
         {description && description !== '-' ? (
@@ -128,7 +129,7 @@ export function CompleteOptions({
             {...(orderedSelections.length === 0 ? { initialFocus: true } : {})}
           />
           <div class="privacy-policy-bottom">
-            <a href="https://privacy.goshippo.com/" class="privacy-policy-link" target="_blank">
+            <a href="https://privacy.goshippo.com/policies?name=privacy-notice" class="privacy-policy-link" target="_blank" rel="noreferrer">
               {formatMessage(bottomMenuMessages.showPolicyButtonAcceptOrRejectAllOrMoreChoices)}
             </a>
           </div>
