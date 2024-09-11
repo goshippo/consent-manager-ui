@@ -10,18 +10,15 @@
   --neue-haas-name: 'neue-haas-unica';
   --neue-haas-bold: 600;
   --neue-haas-regular: 300;
-}
-
-@font-face {
-  font-family: 'Rethink Sans Title';
-  src: local('Rethink Sans');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Neue Haas Unica Title';
-  src: local('neue-haas-unica');
-  font-weight: 500;
+  /* Neue Haas weights */
+  --title-neue-haas-weight: 500;
+  --primary-button-neue-haas-weight: 400;
+  /* Rethink Sans weights */
+  --title-rethink-sans-weight: 700;
+  --primary-button-rethink-sans-weight: 700;
+  /* change these to neue-haas for app & portal css */
+  --title-text-weight: var(--title-rethink-sans-weight);
+  --primary-button-weight: var(--primary-button-rethink-sans-weight);
 }
 
 .background-blur {
@@ -95,7 +92,7 @@
 /** Styles applied to "primary" button text */
 .button-primary-text {
   font-size: 23px;
-  font-weight: var(--neue-haas-bold);
+  font-weight: var(--primary-button-weight);
 }
 
 /** Styles applied to "secondary" button text */
@@ -154,10 +151,10 @@ a:focus {
   color: var(--text-color);
   margin: 0 0 18px 0;
   text-align: center;
-  font-family: "Rethink Sans Title", "Neue Haas Unica Title", sans-serif;
+  font-family: 'Rethink Sans', var(--neue-haas-name), sans-serif;
   font-size: 32px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--title-text-weight,700);
   line-height: 40px;
   padding-bottom: 5px;
 }
@@ -220,6 +217,8 @@ a:focus {
 .toggle-label {
   position: relative;
   margin: 0 10px 20px 10px;
+  font-family: var(--neue-haas-name), -apple-system, BlinkMacSystemFont, avenir next, avenir,
+  helvetica neue, helvetica, 'sans-serif';
   font-weight: var(--neue-haas-regular);
   height: 16px;
   line-height: 16px;
