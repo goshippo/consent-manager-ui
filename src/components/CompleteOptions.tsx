@@ -75,8 +75,8 @@ export function CompleteOptions({
       >
         {formatMessage(messages.consentTitle)}
       </p>
-      <p role="paragraph">{formatMessage(messages.consentTitleToggleInfo)}</p>
-      <form className="complete-options-form">
+      <p role="paragraph" className='paragraph paragraph-left'>{formatMessage(messages.consentTitleToggleInfo)}</p>
+      <form className="complete-options-form complete-options-form-left">
         <GPCIndicator />
         {description && description !== '-' ? (
           <p className="paragraph">
@@ -90,7 +90,7 @@ export function CompleteOptions({
         ) : undefined}
 
         <div
-          className="toggles-container"
+          className="toggles-container toggles-container-left"
           role="group"
           aria-label={formatMessage(messages.buttonGroupAriaDescription)}
         >
@@ -122,17 +122,19 @@ export function CompleteOptions({
               {...(idx === 0 ? { initialFocus: false } : {})}
             />
           ))}
+          </div>
+          <div className="button-confirm-cta">
           <Button
             handleClick={handleSave}
             primaryText={formatMessage(completeOptionsMessages.saveButtonPrimary)}
             type="submit"
             {...(orderedSelections.length === 0 ? { initialFocus: true } : {})}
           />
+          </div>
           <div class="privacy-policy-bottom">
             <a href="https://privacy.goshippo.com/policies?name=privacy-notice" class="privacy-policy-link" target="_blank" rel="noreferrer">
               {formatMessage(bottomMenuMessages.showPolicyButtonAcceptOrRejectAllOrMoreChoices)}
             </a>
-          </div>
         </div>
       </form>
     </div>
