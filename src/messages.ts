@@ -10,7 +10,7 @@ export const messages = defineMessages('ui.src.messages', {
   consentTitleToggleInfo: {
     defaultMessage: 'By checking the box, you agree to the storing of cookies on your device for the specified purpose',
     description:
-      'The title displayed when asking the user for specific opt out/in preferences.',
+      'The title displayed below ConsentTitle to clarify what checking the box means',
   },
   consentTitleAcceptAll: {
     defaultMessage: 'We use cookies',

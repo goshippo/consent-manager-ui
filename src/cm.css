@@ -332,6 +332,10 @@ a:focus {
   border-color: #d8d8d8;
   color: white;
 }
+
+.toggle-label[for=essential-purposes]{
+  color: #9FBBC6;
+}
 /*******************
  * AcceptOrRejectAll
  *******************/
@@ -919,6 +923,7 @@ a:focus {
   .paragraph-left {
     margin: 0 18px 0 0;
     text-align: left;
+    padding: 5px 0;
   }
 
   .toggles-container-left {
