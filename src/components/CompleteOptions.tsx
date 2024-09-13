@@ -123,6 +123,7 @@ export function CompleteOptions({
             />
           ))}
           </div>
+          <div className='container-confirm-privacy-link'>
           <div className="button-confirm-cta">
           <Button
             handleClick={handleSave}
@@ -135,6 +136,7 @@ export function CompleteOptions({
             <a href="https://privacy.goshippo.com/policies?name=privacy-notice" class="privacy-policy-link" target="_blank" rel="noreferrer">
               {formatMessage(bottomMenuMessages.showPolicyButtonAcceptOrRejectAllOrMoreChoices)}
             </a>
+        </div>
         </div>
       </form>
     </div>
