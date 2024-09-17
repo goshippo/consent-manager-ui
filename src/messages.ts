@@ -100,7 +100,7 @@ export const messages = defineMessages('ui.src.messages', {
     description: 'Button to dismiss privacy policy notice.',
   },
   doNotSellOptedOut: {
-    defaultMessage: `Successfully opted out.`,
+    defaultMessage: 'Successfully opted out',
     description:
       'Explainer text in DoNotSellExplainer banner when opted out of sale of data.',
   },
@@ -113,7 +113,7 @@ export const messages = defineMessages('ui.src.messages', {
     description: 'An accessible label for the button to switch language',
   },
   doNotSellOptedIn: {
-    defaultMessage: `Switch the toggle to opt out.`,
+    defaultMessage: 'Switch the toggle to opt out',
     description:
       'Explainer text in DoNotSellExplainer banner when opted in to sale of data.',
   },

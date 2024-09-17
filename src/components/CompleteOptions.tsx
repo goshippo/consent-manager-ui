@@ -123,6 +123,11 @@ export function CompleteOptions({
             />
           ))}
           </div>
+          <div class="privacy-policy-bottom">
+            <a href="https://privacy.goshippo.com/policies?name=privacy-notice" class="privacy-policy-link" target="_blank" rel="noreferrer">
+              {formatMessage(bottomMenuMessages.showPolicyButtonAcceptOrRejectAllOrMoreChoices)}
+            </a>
+        </div>
           <div className='container-confirm-privacy-link'>
           <div className="button-confirm-cta">
           <Button
@@ -132,11 +137,6 @@ export function CompleteOptions({
             {...(orderedSelections.length === 0 ? { initialFocus: true } : {})}
           />
           </div>
-          <div class="privacy-policy-bottom">
-            <a href="https://privacy.goshippo.com/policies?name=privacy-notice" class="privacy-policy-link" target="_blank" rel="noreferrer">
-              {formatMessage(bottomMenuMessages.showPolicyButtonAcceptOrRejectAllOrMoreChoices)}
-            </a>
-        </div>
         </div>
       </form>
     </div>

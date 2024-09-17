@@ -11,14 +11,14 @@
   --neue-haas-bold: 600;
   --neue-haas-regular: 300;
   /* Neue Haas weights */
-  --title-neue-haas-weight: 500;
-  --primary-button-neue-haas-weight: 400;
+  --title-neue-haas-weight: 700;
+  --primary-button-neue-haas-weight: 600;
   /* Rethink Sans weights */
   --title-rethink-sans-weight: 700;
   --primary-button-rethink-sans-weight: 700;
   /* change these to neue-haas for app & portal css */
-  --title-text-weight: var(--title-rethink-sans-weight);
-  --primary-button-weight: var(--primary-button-rethink-sans-weight);
+  --title-text-weight: var(--title-neue-haas-weight);
+  --primary-button-weight: var(--primary-button-neue-haas-weight);
 }
 
 .background-blur {
@@ -41,7 +41,7 @@
 }
 
 .privacy-policy-bottom {
-  padding-top: 25px;
+  margin-bottom: 32px;
 }
 
 .container-confirm-privacy-link {
@@ -580,7 +580,7 @@ a:focus {
   position: relative;
   bottom: 10px;
   margin: 0 auto;
-  width: calc(100% - 10px);
+  width: calc(100% - 20px);
   box-sizing: border-box;
   border-radius: 0px;
   border: 2px solid #000000;
@@ -891,6 +891,11 @@ a:focus {
 .transcend-logo-svg .transcend-wordmark {
   fill-opacity: 0;
   transition: fill 150ms, fill-opacity 150ms;
+}
+
+.text-title-left {
+  margin: 0 18px 0 0;
+  text-align: left;
 }
 
 /*******************
