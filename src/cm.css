@@ -11,14 +11,14 @@
   --neue-haas-bold: 600;
   --neue-haas-regular: 300;
   /* Neue Haas weights */
-  --title-neue-haas-weight: 500;
-  --primary-button-neue-haas-weight: 500;
+  --title-neue-haas-weight: 700;
+  --primary-button-neue-haas-weight: 600;
   /* Rethink Sans weights */
   --title-rethink-sans-weight: 700;
   --primary-button-rethink-sans-weight: 700;
   /* change these to neue-haas for app & portal css */
-  --title-text-weight: var(--title-rethink-sans-weight);
-  --primary-button-weight: var(--primary-button-rethink-sans-weight);
+  --title-text-weight: var(--title-neue-haas-weight);
+  --primary-button-weight: var(--primary-button-neue-haas-weight);
 }
 
 .background-blur {
