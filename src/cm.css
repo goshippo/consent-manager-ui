@@ -17,8 +17,8 @@
   --title-rethink-sans-weight: 700;
   --primary-button-rethink-sans-weight: 700;
   /* change these to neue-haas for app & portal css */
-  --title-text-weight: var(--title-neue-haas-weight);
-  --primary-button-weight: var(--primary-button-neue-haas-weight);
+  --title-text-weight: var(--title-rethink-sans-weight);
+  --primary-button-weight: var(--primary-button-rethink-sans-weight);
 }
 
 .background-blur {
