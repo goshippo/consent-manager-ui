@@ -25,7 +25,13 @@ export function CompleteOptions({
   const { airgap } = useAirgap();
 
   // Get the tracking purposes from Airgap for display
-  const initialConsentSelections = getConsentSelections(airgap);
+  // const initialConsentSelections = getConsentSelections(airgap);
+  const initialConsentSelections = {
+    SaleOfInfo: true,
+    Advertising: true,
+    Analytics: true,
+    Functional: true
+  };
   const purposeToMessageKey = useGetPurposeMessageKeys({
     consentSelection: initialConsentSelections,
     defaultPurposeToMessageKey: DEFAULT_PURPOSE_TO_MESSAGE_KEY,
